@@ -10,14 +10,50 @@
 
 <body>
     <!-- hight cheng -->
-    <div class="mx-auto border w-11/12 h-[2700px] flex flex-col gap-y-10">
+    <div class="mx-auto border w-11/12 h-[2900px] flex flex-col gap-y-7">
         <!-- navbar -->
-        <div class="border h-20 flex justify-between rounded-b-2xl">
+         
+        <div class="border h-20 flex justify-between rounded-b-2xl  ">
+            
             <div class="border w-56 mr-20"></div>
-            <div class="border w-96 ml-20"></div>
+            <div class="border w-96 ml-20 max-md:mr-0 max-md:w-20 max-md:absolute">
+                <!-- menu res -->
+                <div class="flex md:order-2 space-x-3   ">
+                    <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-14 h-14 justify-center text-xl text-gray-950 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-950 dark:focus:ring-gray-600 " aria-controls="navbar-sticky" aria-expanded="false">
+                      <svg class="w-96 h-20 text-xl  " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                      </svg>
+                  </button>
+                </div>
+                <!-- disply menu -->
+                 
+                
+                <!-- menu xl -->
+                <div class="items-center  hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul class="flex flex-col p-4 border md:p-0 mt-8 font-medium  border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 mx-auto ">
+                      <li class="border m-22">
+                        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">خانه</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">پشتیبانی</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">سرویس</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">سامانه</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
         </div>
         <!-- bg-img -->
-        <div class="border border-red-500 w-full h-[500px]  flex items-end ">
+        <div class="border bg-[url('/img/a.jpg')] bg-no-repeat bg-cover  border-red-500 w-full h-[500px]  flex items-end  relative" id="parent">
+            <div class="w-full h-full border border-green-200 absolute">
+            <div class=" w-full h-10 mt-56 flex justify-between">
+                <button class="text-white w-14 h-14 text-5xl" onclick="changeSlider(1)">&#60;</button>
+                <button class="text-white w-14 h-14 text-5xl" onclick="changeSlider(-1)" >&#62;</button>
+            </div></div>
             <!-- C T A -->
             <div class="border flex flex-col w-full items-center h-64 justify-between">
                 <div
@@ -179,12 +215,22 @@
        </div>
        <!-- footer -->
         <div class="border rounded-t-xl border-rose-800 w-full h-96 flex flex-col">
-           <div class=" w-full h-80 grid grid-cols-3" >
-          <div class="border"></div>
-          <div class="border"></div>
-          <div class="border"></div>
-           </div>
-           <div class="border h-14 w-full"></div>
+           <div class=" w-full h-80 flex " >
+          <div class="border  w-2/5 h-full"></div>
+          <div class="border max-md:invisible w-1/5 h-full "></div>
+          
+          <!-- <div class="w-full h-full flex justify-center max-lg:max-w-full"> -->
+              <div class="border grid grid-cols-3 grid-rows-2 max-md:grid-cols-2 max-md:grid-rows-3 max-md:p-3 max-md:gap-2 md:p-7 md:gap-4 xl:gap-8 w-2/5 h-full  ">
+                <div class="border rounded-xl"></div>
+                <div class="border rounded-xl"></div>
+                <div class="border rounded-xl"></div>
+                <div class="border rounded-xl"></div>
+                <div class="border rounded-xl"></div>
+                <div class="border rounded-xl"></div>
+              </div>
+          </div>
+           <!-- </div> -->
+           <div class="border h-10 w-full"></div>
     </div>
     </div>
 
