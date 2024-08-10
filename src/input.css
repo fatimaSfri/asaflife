@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: asaf;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../font/Asaf.woff2) format("true type"),
+    
+  }
+
+ 
+
+  
