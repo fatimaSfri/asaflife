@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        asaf: ['asaf', 'asaf.woff'],
-    },
+        asaf: ["asaf", "Asaf"],
+      
+      },
   },
   plugins: [],
 }
