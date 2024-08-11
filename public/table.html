@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="shortcut icon" href="./img/02.svg" type="image/x-icon">
+    <title>Table</title>
+</head>
+
+<body >
+    
+    <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0   " dir="ltr"  >
+        <nav class="flex items-center justify-between px-12 h-16 ">
+            <!-- logo -->
+       
+
+         <div class="dropdown-menu absolute  -top-full  left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 py-2
+         text-lg font-bold  lg:flex-row lg:justify-center  z-50 ">
+            <ul class="flex flex-col items-center gap-12 lg:flex-row lg:gap-8 " dir="rtl">
+
+
+                <li class="hover:text-[#008061] text-[#00C293] px-3 font-asaf ">خانه</li>
+             <li class="hover:text-[#008061] text-[#00C293]  px-3"> پشتیبانی</li>
+                <li class="hover:text-[#008061] px-3 text-[#00C293]"> سرویس</li>
+                <li class="hover:text-[#008061] px-3 text-[#00C293]">سامانه</li>
+                
+            </ul>
+
+
+           
+         </div>
+         <div class="dropdown-menu left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 py-2
+         text-lg font-bold  max-lg:invisible lg:flex-row lg:justify-center  z-50 ">
+            <ul class="flex flex-col items-center gap-12 lg:flex-row lg:gap-8 " dir="rtl">
+
+
+                <li class="hover:text-[#008061] text-[#00C293] px-3 font-asaf ">خانه</li>
+                <li class="hover:text-[#008061] text-[#00C293]  px-3"> پشتیبانی</li>
+                <li class="hover:text-[#008061] px-3 text-[#00C293]"> سرویس</li>
+                <li class="hover:text-[#008061] px-3 text-[#00C293]">سامانه</li>
+                
+            </ul>
+
+            
+          
+         </div>
+
+         <div class="toggle-button lg:hidden absolute right-3">
+           <img src="./img/bars-solid.svg" class="w-10 h-10 font-[#4f4f4f]">
+           
+         </div>
+         <div class="  flex justify-end  mr-10"><img src="./img/ASAF Life Insurance.svg" class="w-15 h-10 "></div>
+
+        </nav>
+        </header>
+
+
+  <div class=" w-screen h-[700px] flex items-center justify-center">
+<div class=" w-10/12 h-96 overflow-auto">
+
+    <table class="border w-full h-full  ">
+        <thead class="border h-16">
+          <tr class="bg-[#f8f8f8]">
+            <th class="border w-1/12  ">ردیف</th>
+            <th class="border w-8/12 ">سررسید بدهی</th>
+            <th class="border w-3/12 ">پرداخت بدهی</th>
+          </tr>
+        </thead> 
+        <tbody>
+          <tr class="border">
+            <td class="border text-center" >1</td>
+            <td class="border text-center">1403/05/21</td>
+            <td class="border text-center">  <button class=" border w-8/12 text-white  h-10   bg-gradient-to-r from-[#008061] to-[#00C293] rounded-md" onclick="alert('پرداخت شد')">پرداخت</button></td>
+          </tr>
+          <tr class="border">
+            <td class="border  text-center">2</td>
+            <td class="border text-center">1403/05/22</td>
+            <td class="border text-center">  <button class=" border w-8/12 text-white  h-10   bg-gradient-to-r from-[#008061] to-[#00C293] rounded-md" onclick="alert('پرداخت شد')">پرداخت</button></td>
+          </tr>
+          <tr class="border">
+            <td class="border text-center">3</td>
+            <td class="border text-center">1403/05/23</td>
+            <td class="border text-center">  <button class=" border w-8/12 text-white  h-10   bg-gradient-to-r from-[#008061] to-[#00C293] rounded-md" onclick="alert('پرداخت شد')">پرداخت</button></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+
+<Script src="./js/app.js"></Script>
+</body>
+</html>
