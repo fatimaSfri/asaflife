@@ -8,9 +8,6 @@ toggleBtn.addEventListener('click',() =>
 })
 
 let imgSlider =document.querySelector('#parent')
-let childElem=document.querySelector('#childfrist')
-let btnNext=document.querySelector('#next')
-let btnPrev=document.querySelector('#prev')
 let dot =document.querySelectorAll(".dot")
 let a_img=['./img/bg/03.jpg','./img/bg/04.jpg','./img/bg/02.jpg','./img/bg/05.jpg',]
 let index = 0;
@@ -18,19 +15,30 @@ let index = 0;
 setInterval(() => changeSlider(-1) ,10000);
 
 
-const changeSlider = (step) => 
+const changeSlider = (step,inx=null) => 
 {
     
+    if(inx != null){
+      index=inx
+     }
+
     index = (index + step + a_img.length) % a_img.length;
     imgSlider.style.backgroundImage = `url(${a_img[index]})`;   
-    
+
 }
 
 window.changeSlider = changeSlider;
 
 
+const dots = document.getElementsByClassName('dot');
 
+window.otherClear = (index) => {
 
-
+    for (let i = 0; i < dots.length; i++) 
+    {
+        dots[i].style.background = "#C2FFF1";
+    }
+    dots[index].style.background = "#00c293";
+}
 
 
