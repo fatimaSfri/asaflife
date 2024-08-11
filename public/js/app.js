@@ -1,11 +1,3 @@
-
-// function changeSlide(){
-// index += n
-// changeSlider(index)
-
-// }
-// const mmm = require("./TestModule");
-
 const toggleBtn =document.querySelector('.toggle-button')
 const dropdown=document.querySelector(".dropdown-menu")
 
@@ -26,14 +18,15 @@ let index = 0;
 setInterval(() => changeSlider(-1) ,10000);
 
 
-
 const changeSlider = (step) => 
 {
     
     index = (index + step + a_img.length) % a_img.length;
     imgSlider.style.backgroundImage = `url(${a_img[index]})`;   
+    
 }
 
+window.changeSlider = changeSlider;
 
 
 
