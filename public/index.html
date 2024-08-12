@@ -6,50 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صفحه اصلی</title>
     <link rel="stylesheet" href="./styles/output.css">
-    <link rel="shortcut icon" href="./img/02.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/02.svg" type="image/x-icon" >
     
 </head>
 
 <body>
     <!-- hight cheng -->
-    <div class="mx-auto    h-[2600hv] flex flex-col  max-lg:h-[3300px] font-asaf ">
+    <div class="w-full h-[2600hv] flex flex-col  max-lg:h-[3200px] font-asaf ">
         <!-- navbar -->
          
     
-                    <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0   " dir="ltr"  >
-                    <nav class="flex items-center justify-between px-12 h-16 ">
+                    <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0 w-full fixed z-50 " dir="ltr"  >
+                    <nav class="flex items-center justify-between  h-16  ">
                         <!-- logo -->
                    
 
-                     <div class="dropdown-menu absolute  -top-full  left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 py-2
-                     text-lg font-bold  lg:flex-row lg:justify-center  z-50  ">
-                        <ul class="flex flex-col items-center gap-12 lg:flex-row lg:gap-8 " dir="rtl">
+                     <!-- <div class=" dropdown-menu absolute  -top-full  left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 py-2
+                     text-lg font-bold  lg:flex-row lg:justify-center  z-50  "> -->
+                        <ul class="flex flex-col items-center  lg:flex-row h-48  dropdown-menu absolute top-[-140px] max-lg:bg-[#0000009f]  
+                        text-lg font-bold  lg:justify-center w-full z-50 " dir="rtl">
 
 
-                            <li class="hover:text-[#008061] text-[#00C293] px-3 font-asaf ">خانه</li>
-                         <li class="hover:text-[#008061] text-[#00C293]  px-3"> پشتیبانی</li>
-                            <li class="hover:text-[#008061] px-3 text-[#00C293]"> سرویس</li>
-                            <li class="hover:text-[#008061] px-3 text-[#00C293]">سامانه</li>
-                            
+                            <li class="hover:text-[#008061] text-[#00C293] pt-2 font-asaf py-2 ">خانه</li>
+                         <li class="hover:text-[#008061] text-[#00C293]   py-2"> پشتیبانی</li>
+                            <li class="hover:text-[#008061] px-3 text-[#00C293] py-2 "> سرویس</li>
+                            <li class="hover:text-[#008061] px-3 text-[#00C293] py-2">سامانه</li>   
                         </ul>
 
 
                        
-                     </div>
+                     <!-- </div> -->
                      
                     </nav> </header>
 
-                    <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0  z-50 fixed w-full" dir="ltr"  >
-                    <nav class="flex items-center  justify-between px-12 h-16 ">
-                     <div class="dropdown-menu left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 py-2
+                    <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0  z-50 fixed w-full "  >
+                    <nav class="flex items-center  justify-between px-7 h-16 ">
+                     <div class="dropdown-menu left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 
                      text-lg font-bold  max-lg:invisible lg:flex-row lg:justify-center  z-50 ">
-                        <ul class="flex flex-col items-center gap-12 lg:flex-row lg:gap-8 " dir="rtl">
+                        <ul class=" lg:flex-row lg:gap-8 dropdown-menu  max-lg:bg-[#0000009f] w-full flex flex-col items-center
+                        text-lg font-bold  max-lg:invisible  lg:justify-center  z-50  " dir="rtl">
 
 
-                            <li class="hover:text-[#008061] text-[#00C293] px-3 font-asaf ">خانه</li>
-                            <li class="hover:text-[#008061] text-[#00C293]  px-3"> پشتیبانی</li>
-                            <li class="hover:text-[#008061] px-3 text-[#00C293]"> سرویس</li>
-                            <li class="hover:text-[#008061] px-3 text-[#00C293]">سامانه</li>
+                            <li class="hover:text-[#008061] text-[#00C293] px-3 font-asaf">خانه</li>
+                            <li class="hover:text-[#008061] text-[#00C293]  px-3 py-5"> پشتیبانی</li>
+                            <li class="hover:text-[#008061] px-3 text-[#00C293] py-5"> سرویس</li>
+                            <li class="hover:text-[#008061] px-3 text-[#00C293] py-5">سامانه</li>
                             
                         </ul>
 
@@ -57,11 +58,11 @@
                       
                      </div>
 
-                     <div class="toggle-button lg:hidden absolute right-3">
-                       <img src="./img/bars-solid.svg" class="w-10 h-10 font-[#4f4f4f] z-50" onclick="menuHandler()">
+                     <div class="toggle-button lg:hidden absolute " >
+                       <img src="./img/bars-solid.svg" class="w-10 h-10 font-[#4f4f4f] z-50">
                        
                      </div>
-                     <div class="  flex justify-end  mr-10"><img src="./img/ASAF Life Insurance.svg" class="w-15 h-10 "></div>
+                     <div class="flex justify-start"><img src="./img/ASAF Life Insurance.svg" class="w-15 h-10 "></div>
 
                     </nav>
                     </header>
@@ -72,23 +73,22 @@
 
                 
         <!-- bg-img -->
-        <div class=" bg-[url('../img/bg/02.jpg')] bg-cover bg-no-repeat bg-center shadow-md  w-full h-[600px]   flex items-end  relative" id="parent">
-            <div class="flex justify-between w-full h-full absolute">
-                <div class="w-14 h-full max-lg:w-10  bg-[rgba(255,255,255,0.2)] flex flex-col items-center justify-center z-50"  onclick="changeSlider(1)">
-                    <button class="text-white w-14 text-5xl z-50 "  onclick="changeSlider(1)" id="next">&#60;</button>
+        <div class=" bg-[url('../img/bg/02.jpg')] bg-cover bg-no-repeat bg-center shadow-md  h-[650px] flex items-end mt-16 relative ml-0" id="parent">
+            <div class="flex justify-between w-full h-full absolute ">
+                <div class="w-14 h-full max-lg:w-7 bg-[rgba(255,255,255,0.2)] flex flex-col items-center justify-center z-50"  onclick="changeSlider(1)">
+                    <button class="text-white w-7 text-5xl z-50 "  onclick="changeSlider(1)" id="next">&#60;</button>
                 </div>
-                <div class="w-14 h-full max-lg:w-10  bg-[rgba(250,248,248,0.2)] flex flex-col items-center justify-center z-50" onclick="changeSlider(-1)">
-                    <button class="text-white w-14 h-14 text-5xl z-50" onclick="changeSlider(-1)" id="prev">&#62;</button>
+                <div class="w-14 h-full max-lg:w-7  bg-[rgba(250,248,248,0.2)] flex flex-col items-center justify-center z-50" onclick="changeSlider(-1)">
+                    <button class="text-white w-7 h-14 text-5xl z-50" onclick="changeSlider(-1)" id="prev">&#62;</button>
                 </div>
             </div>
-            <div class="w-full h-full  absolute ">
             
-            </div>
+            
         <!-- </div> -->
             <!-- C T A -->
-            <div class="flex flex-col w-full items-center h-64 justify-between">
+            <div class="flex flex-col w-full items-center h-64 max-lg:h-96 justify-between">
                 <div
-                    class=" w-80 h-36 bg-[rgba(255,255,255,0.7)]  p-2 rounded-xl flex flex-col  justify-around ml-[30rem] max-md:mx-auto ">
+                    class=" w-80 h-36 bg-[rgba(255,255,255,0.7)]  p-2 rounded-xl flex flex-col  justify-around ml-[30rem] max-md:mx-auto max-lg:mt-48 ">
                     <p class="text-center px-3 text-gray-700 text-[12px]">ارزان ترین نرخ در کشور با کمترین سود ارائه بیمه نامه عمر و درمان</p>
                     <button class=" border w-full  h-10   bg-gradient-to-r from-[#008061] to-[#00C293] rounded-md text-white">ورود به سامانه</button>
                 </div>
@@ -104,19 +104,19 @@
                 </div>
         </div>
         <!-- cart , cheng-hight  -->
-        <div class=" w-full  flex flex-col justify-around max-md:max-h-96 max-md:overflow-auto">
+        <div class=" w-full  flex flex-col justify-around  ">
             <div class=" mx-auto  w-3/12 text-center h-10 my-6 rounded-xl p-1 bg-[#008061] text-white font-bold "> سرویس ها </div>
             <div class=" boreder-red-500 w-11/12 mx-auto grid  
-         grid-cols-[repeat(auto-fit,minmax(350px,auto))] auto-rows-fr gap-x-3 gap-y-3">
+              grid-cols-[repeat(auto-fit,minmax(350px,auto))] auto-rows-fr gap-x-3 gap-y-3">
 
 
                 <div class="shadow-xl rounded-xl p-2">
                     <div class=" flex items-center ">
-                        <div class="  h-32  mx-2 flex flex-col justify-between overflow-hidden">
+                        <div class="  h-32 w-1/2 mx-2 flex flex-col justify-between overflow-hidden">
                             <h1 class="p-1 text-center font-bold text-xl pt-5">بیمه خدام </h1>
-                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">ارزان ترین نرخ در کشور با کمترین سود ارائه بیمه نامه عمر و درمان</p>
+                            <p class="p-1 pb-1 text-center text-[12px]  text-[#4f4f4f]">ما در خدمت هستیم تا از خطرات مختلف دارایی های شما محافظت کنیم</p>
                         </div>
-                        <img src="./img/servics/ministrant (1).jpg" class="border w-1/2 h-32  mx-2 rounded-xl">
+                        <img src="./img/servics/ministrant (1).jpg" class="border  mx-auto h-32   rounded-xl">
                     </div>
 
 
@@ -124,11 +124,11 @@
 
                 <div class="shadow-xl rounded-xl p-2">
                     <div class=" flex items-center ">
-                        <div class="  h-32  mx-2 flex flex-col justify-between overflow-hidden">
+                        <div class="  h-32  mx-2 flex  w-1/2 flex-col justify-between overflow-hidden">
                             <h1 class="p-1 text-center font-bold text-xl pt-5"> روانشناسی</h1>
-                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">ارزان ترین نرخ در کشور با کمترین سود ارائه بیمه نامه عمر و درمان</p>
+                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">آرامش در هر لحظه با آساف لایف </p>
                         </div>
-                        <img src="./img/servics/psychology.jpg" class="border w-1/2 h-32  mx-2 rounded-xl">
+                        <img src="./img/servics/psychology.jpg" class="border  mx-auto h-32   rounded-xl">
                     </div>
 
 
@@ -137,23 +137,24 @@
 
                 <div class="shadow-xl rounded-xl p-2">
                     <div class=" flex items-center ">
-                        <div class="  h-32  mx-2 flex flex-col justify-between overflow-hidden">
+                        <div class="  h-32  mx-2 flex  w-1/2 flex-col justify-between overflow-hidden">
                             <h1 class="p-1 text-center font-bold text-xl pt-5">  بیمه ثالث بدنه </h1>
-                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">ارزان ترین نرخ در کشور با کمترین سود ارائه بیمه نامه عمر و درمان</p>
+                            <p class="p-1 pb-1 text-center text-[12px]  text-[#4f4f4f]">از اینکه آساف لایف  را برای بیمه خودروی خود انتخاب کردید سپاسگذاریم</p>
                         </div>
-                        <img src="./img/servics/carBody.jpg" class="border w-1/2 h-32  mx-2 rounded-xl">
-                    </div>
+                       
+                        <img src="./img/servics/carBody.jpg" class="border  h-32  mx-auto rounded-xl"></div>
+                 
 
 
                 </div>
 
                 <div class="shadow-xl rounded-xl p-2">
                     <div class=" flex items-center ">
-                        <div class="  h-32  mx-2 flex flex-col justify-between overflow-hidden">
+                        <div class="  h-32  mx-2 flex  w-1/2 flex-col justify-between overflow-hidden">
                             <h1 class="p-1 text-center font-bold text-xl pt-5">   خانواده </h1>
-                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">ارزان ترین نرخ در کشور با کمترین سود ارائه بیمه نامه عمر و درمان</p>
+                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]"> آساف لایف سپر امانت زندگی شما</p>
                         </div>
-                        <img src="./img/servics/housing.jpg" class="border w-1/2 h-32  mx-2 rounded-xl">
+                        <img src="./img/servics/housing.jpg" class="border  mx-auto h-32   rounded-xl">
                     </div>
 
 
@@ -161,33 +162,33 @@
 
                 <div class="shadow-xl rounded-xl p-2">
                     <div class=" flex items-center ">
-                        <div class="  h-32  mx-2 flex flex-col justify-between overflow-hidden">
+                        <div class="  h-32  mx-2 flex w-1/2 flex-col justify-between overflow-hidden">
                             <h1 class="p-1 text-center font-bold text-xl pt-5">   نگهداری کودکان </h1>
-                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">ارزان ترین نرخ در کشور با کمترین سود ارائه بیمه نامه عمر و درمان</p>
+                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]"> با آساف لایف به استقبال آینده کودکان خود بروید </p>
                         </div>
-                        <img src="./img/servics/housing.jpg" class="border w-1/2 h-32  mx-2 rounded-xl">
+                        <img src="./img/servics/housing.jpg" class="border  mx-auto h-32   rounded-xl">
                     </div>
 
 
                 </div>
                 <div class="shadow-xl rounded-xl p-2">
                     <div class=" flex items-center ">
-                        <div class="  h-32  mx-2 flex flex-col justify-between overflow-hidden">
+                        <div class="  h-32  mx-2 flex w-1/2 flex-col justify-between overflow-hidden">
                             <h1 class="p-1 text-center font-bold text-xl pt-5"> سالمندان   </h1>
-                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">ارزان ترین نرخ در کشور با کمترین سود ارائه بیمه نامه عمر و درمان</p>
+                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">از امروز با اطمینان زندگی کنید</p>
                         </div>
-                        <img src="./img/servics/elderly.jpg" class="border w-1/2 h-32  mx-2 rounded-xl">
+                        <img src="./img/servics/elderly.jpg" class="border mx-auto h-32  rounded-xl">
                     </div>
 
 
                 </div>
                 <div class="shadow-xl rounded-xl p-2">
                     <div class=" flex items-center ">
-                        <div class="  h-32  mx-2 flex flex-col justify-between overflow-hidden">
+                        <div class="  h-32  mx-2 flex w-1/2 flex-col justify-between overflow-hidden">
                             <h1 class="p-1 text-center font-bold text-xl pt-5">  بیمه حیوانات خانگی </h1>
-                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">ارزان ترین نرخ در کشور با کمترین سود ارائه بیمه نامه عمر و درمان</p>
+                            <p class="p-1 pb-1 text-center text-[12px]  text-[#4f4f4f]"> آساف لایف با شما در هر مرحله همراه است</p>
                         </div>
-                        <img src="./img/servics/animals.jpg" class="border w-1/2 h-32  mx-2 rounded-xl">
+                        <img src="./img/servics/animals.jpg" class="border  h-32   mx-auto rounded-xl">
                     </div>
 
 
@@ -195,11 +196,11 @@
 
                 <div class="shadow-xl rounded-xl p-2">
                     <div class=" flex items-center ">
-                        <div class="  h-32  mx-2 flex flex-col justify-between overflow-hidden">
+                        <div class="  h-32  mx-2 flex w-1/2 flex-col justify-between overflow-hidden">
                             <h1 class="p-1 text-center font-bold text-xl pt-5"> مشاوره بورس </h1>
-                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">ارزان ترین نرخ در کشور با کمترین سود ارائه بیمه نامه عمر و درمان</p>
+                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">اطمینان در کیف پول شما</p>
                         </div>
-                        <img src="./img/servics/psychology.jpg" class="border w-1/2 h-32  mx-2 rounded-xl">
+                        <img src="./img/servics/psychology.jpg" class="border  mx-auto h-32   rounded-xl">
                     </div>
 
 
@@ -207,11 +208,11 @@
 
                 <div class="shadow-xl rounded-xl p-2">
                     <div class=" flex items-center ">
-                        <div class="  h-32  mx-2 flex flex-col justify-between overflow-hidden ">
+                        <div class="  h-32  mx-2 flex  w-1/2 flex-col justify-between overflow-hidden ">
                             <h1 class="p-1 text-center font-bold text-xl pt-5"> بیمه درمان   </h1>
-                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">ارزان ترین نرخ در کشور با کمترین سود ارائه بیمه نامه عمر و درمان</p>
+                            <p class="p-1 pb-1 text-center text-[14px]  text-[#4f4f4f]">حافظ امنیت و سلامتی خود باشید</p>
                         </div>
-                        <img src="./img/servics/elderly.jpg" class="border w-1/2 h-32  mx-2 rounded-xl">
+                        <img src="./img/servics/elderly.jpg" class="border mx-auto h-32  rounded-xl">
                     </div>
 
 
@@ -305,14 +306,14 @@
                       <div class="flex " dir="ltr">
                     <div class="  h-2/4 z-50 flex   pt-1  lg:pt-5"> 
                           <div>
-                        <img src="./img/5/HekmatSaba.svg" class="w-20 h-20 object-cover z-50 ">
-                        <p class="text-[12px]  text-center max-lg:text-[10px]">بیمه حکمت</p>
+                        <div class="w-16 h-16"><img src="./img/5/HekmatSaba.svg" class="w-full h-full object-cover z-50 "></div>
+                        <p class="text-[10px] pt-3  text-center">بیمه حکمت</p>
                     </div>
                     </div>
                     <div class="mx-5 h-2/4 z-50 flex  pt-1 pl-2 lg:pt-5"> 
                         <div>
-                      <img src="./img/ASAF-01.svg" class="w-20 h-20 object-cover z-50 ">
-                      <p class="text-[12px]  text-center max-lg:text-[10px]">بیمه حمل و نقل</p>
+                     <div class="w-14 h-14"> <img src="./img/ASAF-01.svg" class="w-full h-full object-cover z-50 mt-1 "></div>
+                      <p class="text-[10px] pt-4 text-center ">بیمه حمل و نقل</p>
                   </div>
                   </div></div>
 
@@ -320,29 +321,25 @@
                   
                 </div>
             </div>
-          <div class="w-full   h-1/4 flex justify-between  ">
-            <div class=" w-1/2 max-lg:2/3 h-16 overflow-x-auto text-center  text-sm pt-3 max-lg:text-[10px]  bg-[#c2fff1] rounded-lg">  تمامی حقوق مادی و معنوی سایت  محفوظ و متعلق به شرکت آینده سازان آسایش فردا می باشد <br
+          <div class="w-full   h-1/4 flex justify-between mt-2 ">
+            <div class=" w-1/2 max-lg:2/3 h-16 overflow-x-auto text-center mb-2 text-sm pt-3 max-lg:text-[10px]  bg-[#c2fff1] rounded-lg">  تمامی حقوق مادی و معنوی سایت  محفوظ و متعلق به شرکت آینده سازان آسایش فردا می باشد <br
         > طراحی و توسعه تیم انفورماتیک  آینده سازان آسایش فردا</div>
        
             <div class=" w-1/4 h-full flex  justify-end max-md:w-1/2  "  >
                 <div  class=" w-2/12 h-full flex items-center justify-center ">
-                    <img src="./img/5/Social Media/instagram-brands-solid.svg"  class="w-7 h-7  object-cover">
+                    <img src="./img/5/Social Media/instagram-2016-logo-svgrepo-com.svg"  class="w-5 h-5  object-cover">
                 </div>
                 <div class="w-2/12 h-full flex items-center justify-center ">
-                    <img src="./img/5/Social Media/telegram-brands-solid.svg"  class="w-7 h-7 object-cover">
+                  <a href="https://t.me/asafsurance">  <img src="./img/5/Social Media/telegram-svgrepo-com.svg"  class="w-6 h-6 object-cover"></a>
                 </div>
                 <div class=" w-2/12 h-full flex items-center justify-center ">
-                    <img src="./img/5/Social Media/whatsapp-brands-solid.svg"  class="w-7 h-7  object-cover">
+                    <img src="./img/5/Social Media/whatsapp-symbol-logo-svgrepo-com.svg"  class="w-[26px] h-[26px] object-cover">
                 </div>
+            
                 <div class=" w-2/12 h-full  flex items-center justify-center">
-                    <img src="./img/5/Social Media/x-twitter-brands-solid.svg"  class="w-7 h-7  object-cover">
+                    <img src="./img/5/Social Media/eitaa-icon-colorful.svg" class="w-5 h-5 object-cover">
                 </div>
-                <div class=" w-2/12 h-full  flex items-center justify-center">
-                    <img src="./img/Eitaa.svg" class="w-7 h-7 object-cover">
-                </div>
-                <div class=" w-2/12 h-full flex items-center justify-center ">
-                    <img src="./img/Robika.svg"  class="w-7 h-7 object-cover">
-                </div>
+               
             </div>
           </div>
           

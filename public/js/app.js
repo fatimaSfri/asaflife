@@ -1,10 +1,21 @@
 const toggleBtn =document.querySelector('.toggle-button')
 const dropdown=document.querySelector(".dropdown-menu")
+let s=0
+
+window.addEventListener('scroll', function(){
+
+s = dropdown.scrollTop
+console.log(s)
+
+})
+
 
 toggleBtn.addEventListener('click',() =>
 {
-    console.log('hi')
- dropdown.classList.toggle('top-16')
+  
+ dropdown.classList.toggle('top-[4.1rem]')
+
+
 })
 
 
@@ -25,7 +36,8 @@ const changeSlider = (step,inx=null) =>
      }
 
     index = (index + step + a_img.length) % a_img.length;
-    imgSlider.style.backgroundImage = `url(${a_img[index]})`;   
+    imgSlider.style.backgroundImage = `url(${a_img[index]})`; 
+  
 
 }
 
