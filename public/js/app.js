@@ -7,6 +7,8 @@ toggleBtn.addEventListener('click',() =>
  dropdown.classList.toggle('top-16')
 })
 
+
+
 let imgSlider =document.querySelector('#parent')
 let dot =document.querySelectorAll(".dot")
 let a_img=['./img/bg/03.jpg','./img/bg/04.jpg','./img/bg/02.jpg','./img/bg/05.jpg',]
