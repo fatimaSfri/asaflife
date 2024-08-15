@@ -2245,12 +2245,16 @@ video {
   background-color: rgba(255,255,255,0.2);
 }
 
-.bg-\[url\(\'\.\.\/img\/bg\/555\.jpg\'\)\] {
-  background-image: url('../img/bg/555.jpg');
+.bg-\[url\(\'\.\.\/img\/bg\/house\.jpg\'\)\] {
+  background-image: url('../img/bg/house.jpg');
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\/img\/bg\/house\.jpg\'\)\] {
+  background-image: url('./img/bg/house.jpg');
 }
 
 .from-\[\#008061\] {
