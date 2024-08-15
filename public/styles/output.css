@@ -3284,22 +3284,6 @@ video {
     width: 16rem;
   }
 
-  .max-sm\:grid-cols-\[repeat\(auto-fit\2c minmax\(150px\2c auto\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(150px,auto));
-  }
-
-  .max-sm\:grid-cols-\[repeat\(auto-fit\2c minmax\(2000px\2c auto\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(2000px,auto));
-  }
-
-  .max-sm\:grid-cols-\[repeat\(auto-fit\2c minmax\(200px\2c auto\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
-  }
-
-  .max-sm\:grid-cols-\[repeat\(auto-fit\2c minmax\(250px\2c auto\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
-  }
-
   .max-sm\:pt-2 {
     padding-top: 0.5rem;
   }
@@ -3337,10 +3321,6 @@ video {
 @media (min-width: 640px) {
   .sm\:grid-cols-\[repeat\(auto-fit\2c minmax\(300px\2c auto\)\)\] {
     grid-template-columns: repeat(auto-fit,minmax(300px,auto));
-  }
-
-  .sm\:grid-cols-\[repeat\(auto-fit\2c minmax\(350px\2c auto\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
   }
 
   .sm\:underline {
