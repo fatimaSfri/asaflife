@@ -10,50 +10,58 @@
 
 <body >
     
-    <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0   " dir="ltr"  >
-        <nav class="flex items-center justify-between px-12 h-16 ">
-            <!-- logo -->
+    
+  <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0 w-full fixed z-50  " dir="ltr"  >
+    <nav class="flex items-center justify-between  h-16  ">
+        <!-- logo -->
+   
+
+     <!-- <div class=" dropdown-menu absolute  -top-full  left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 py-2
+     text-lg font-bold  lg:flex-row lg:justify-center  z-50  "> -->
+        <ul class="flex flex-col items-center  lg:flex-row h-48  dropdown-menu absolute top-[-140px] max-lg:bg-[#0000009f]  
+        text-lg font-bold  lg:justify-center w-full z-50 " dir="rtl">
+
+
+            <li class="hover:text-[#008061] text-[#00C293] pt-2 font-asaf py-2 ">خانه</li>
+         <li class="hover:text-[#008061] text-[#00C293]   py-2"> پشتیبانی</li>
+            <li class="hover:text-[#008061] px-3 text-[#00C293] py-2 "> سرویس</li>
+            <li class="hover:text-[#008061] px-3 text-[#00C293] py-2">سامانه</li>   
+        </ul>
+
+
        
+     <!-- </div> -->
+     
+    </nav> </header>
 
-         <div class="dropdown-menu absolute  -top-full  left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 py-2
-         text-lg font-bold  lg:flex-row lg:justify-center  z-50 ">
-            <ul class="flex flex-col items-center gap-12 lg:flex-row lg:gap-8 " dir="rtl">
-
-
-                <li class="hover:text-[#008061] text-[#00C293] px-3 font-asaf ">خانه</li>
-             <li class="hover:text-[#008061] text-[#00C293]  px-3"> پشتیبانی</li>
-                <li class="hover:text-[#008061] px-3 text-[#00C293]"> سرویس</li>
-                <li class="hover:text-[#008061] px-3 text-[#00C293]">سامانه</li>
-                
-            </ul>
+    <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0  z-50 fixed w-full "  >
+    <nav class="flex items-center  justify-between px-7 h-16 ">
+     <div class="dropdown-menu left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 
+     text-lg font-bold  max-lg:invisible lg:flex-row lg:justify-center  z-50 ">
+        <ul class=" lg:flex-row lg:gap-8 dropdown-menu  max-lg:bg-[#0000009f] w-full flex flex-col items-center
+        text-lg font-bold  max-lg:invisible  lg:justify-center  z-50  " dir="rtl">
 
 
-           
-         </div>
-         <div class="dropdown-menu left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 py-2
-         text-lg font-bold  max-lg:invisible lg:flex-row lg:justify-center  z-50 ">
-            <ul class="flex flex-col items-center gap-12 lg:flex-row lg:gap-8 " dir="rtl">
-
-
-                <li class="hover:text-[#008061] text-[#00C293] px-3 font-asaf ">خانه</li>
-                <li class="hover:text-[#008061] text-[#00C293]  px-3"> پشتیبانی</li>
-                <li class="hover:text-[#008061] px-3 text-[#00C293]"> سرویس</li>
-                <li class="hover:text-[#008061] px-3 text-[#00C293]">سامانه</li>
-                
-            </ul>
-
+            <li class="hover:text-[#008061] text-[#00C293] px-3 font-asaf">خانه</li>
+            <li class="hover:text-[#008061] text-[#00C293]  px-3 py-5"> پشتیبانی</li>
+            <li class="hover:text-[#008061] px-3 text-[#00C293] py-5"> سرویس</li>
+            <li class="hover:text-[#008061] px-3 text-[#00C293] py-5">سامانه</li>
             
-          
-         </div>
+        </ul>
 
-         <div class="toggle-button lg:hidden absolute right-3 ">
-           <img src="./img/bars-solid.svg" class="w-10 h-10 font-[#4f4f4f]">
-           
-         </div>
-         <div class="  flex justify-end  mr-10"><img src="./img/ASAF Life Insurance.svg" class="w-15 h-10 "></div>
+        
+      
+     </div>
 
-        </nav>
-        </header>
+     <div class="toggle-button lg:hidden absolute " >
+       <img src="./img/bars-solid.svg" class="w-10 h-10 font-[#4f4f4f] z-50">
+       
+     </div>
+     <div class="flex justify-start"><img src="./img/ASAF Life Insurance.svg" class="w-32 h-15 "></div>
+
+    </nav>
+    </header>
+
 
 
   <div class=" w-screen h-[700px] flex items-center justify-center">
@@ -71,17 +79,17 @@
           <tr class="border">
             <td class="border text-center" >1</td>
             <td class="border text-center">1403/05/21</td>
-            <td class="border text-center">  <button class=" border w-8/12 text-white  h-10   bg-gradient-to-r from-[#008061] to-[#00C293] rounded-md" onclick="alert('پرداخت شد')">پرداخت</button></td>
+            <td class="border text-center">  <button class=" border w-9/12 text-white  h-10 text-[14px]  bg-gradient-to-r from-[#008061] to-[#00C293] rounded-md" onclick="alert('پرداخت شد')">پرداخت</button></td>
           </tr>
           <tr class="border">
             <td class="border  text-center">2</td>
             <td class="border text-center">1403/05/22</td>
-            <td class="border text-center">  <button class=" border w-8/12 text-white  h-10   bg-gradient-to-r from-[#008061] to-[#00C293] rounded-md" onclick="alert('پرداخت شد')">پرداخت</button></td>
+            <td class="border text-center">  <button class=" border w-9/12 text-white  h-10 text-[14px]  bg-gradient-to-r from-[#008061] to-[#00C293] rounded-md" onclick="alert('پرداخت شد')">پرداخت</button></td>
           </tr>
           <tr class="border">
             <td class="border text-center">3</td>
             <td class="border text-center">1403/05/23</td>
-            <td class="border text-center">  <button class=" border w-8/12 text-white  h-10   bg-gradient-to-r from-[#008061] to-[#00C293] rounded-md" onclick="alert('پرداخت شد')">پرداخت</button></td>
+            <td class="border text-center">  <button class=" border w-9/12 text-white  h-10 text-[14px]  bg-gradient-to-r from-[#008061] to-[#00C293] rounded-md" onclick="alert('پرداخت شد')">پرداخت</button></td>
           </tr>
         </tbody>
       </table>
