@@ -6,43 +6,53 @@
     <title>ورود</title>
     <link rel="stylesheet" href="../public/styles/output.css">
     <link rel="shortcut icon" href="./img/02.svg" type="image/x-icon">
-    <style>
-        .icon {
-          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(100%) contrast(100%);
-        }
-        </style>
-
+   
 </head>
    <body>
-     <div class="flex items-center justify-center h-screen w-screen">
-    <div class="w-9/12 h-[550px]  flex  mx-auto   ">
-       <div class=" w-1/2 h-full ">
-           <div class=" w-96 h-52 flex justify-center items-center ">
-            <img src="./img/02.svg" class="border w-32 h-32  rounded-full object-cover">
-           </div>
-
-           
-           <div class=" w-96  flex flex-col  gap-y-3 justify-around  ">
-            <label class="text-[14px] mr-4 mt-2  text-[#a3a1a1] ">نام کاربری</label>
-            <div class="w-full h-7 flex  items-center  "><div class="bordr w-9 h-9 rounded-xl  bg-[#00c293] absolute z-50 mr-2 text-white">   
-                 <img src="./img/user-solid.svg" class="w-4 h-4 my-2 mx-auto icon" ></div>
-             <input type="text" class="w-11/12 h-9 border p-2 relative mx-auto pr-7 rounded-xl outline-none border-[#00c293]">
-        
-                </div>
-           
-          <label class="text-[14px] mr-4  text-[#969595] "> رمز عبور</label>
-            <div class="w-full h-7 flex  items-center  "><div class="bordr w-9 h-9 rounded-xl  bg-[#00c293] absolute z-50 mr-2 ">  <img src="./img/lock-solid-1.svg" class="w-4 h-4 my-2 mx-auto icon" ></div> <input type="text" class="w-11/12 h-9 border p-2 relative mx-auto pr-7 rounded-xl outline-none border-[#00c293]">
-                </div>
-          
-            <button class="border w-11/12 h-9 mt-8 mx-auto  rounded-xl text-white font-bold bg-[#00c293]">ورود به حساب کاربری</button>
-            <button class="border w-11/12 h-9 mx-auto rounded-xl border-red-500 text-red-500">فراموشی رمز عبور</button></div>
-           
-       </div>
-       <div class="max-lg:invisible   ">
-        <img src="./img/Untitled.jpg" class="w-full h-full object-cover  rounded-xl ">
-       </div>
+    
+    <div class="flex max-md:flex-wrap-reverse items-center justify-center  w-full ">
+      <div class="flex flex-col items-center justify-evenly  min-w-96 h-[94vh] md:my-5 max-md:h-[22rem] max-sm:w-11/12 lg:w-4/12 shadow " >
+     <div class="flex flex-col items-center justify-evenly  min-w-96 h-[65vh] md:my-5 max-md:h-[22rem] max-sm:w-11/12 lg:w-4/12 mx-2 ">
+      <div class=" flex flex-col items-center justify-around">
+      <img src="./img/02.svg" class="w-28 h-28 max-md:w-20 max-md:h-20 " >
+      <h1 class="text-2xl mt-5  text-[#00c293] max-md:text-lg " >ورود به حساب کاربری</h1>
     </div>
-</div>
+      <form class=" flex  flex-col justify-around h-3/6 w-full " >
+       <div class="flex flex-col items-center  h-[116px] justify-around ">
+        <input type="text" class="w-11/12 h-[50px] border rounded-xl border-[#c2fff1] border-2 p-3 placeholder:text-[#00c293] focus:outline-[#c2fff1] focus:outline-double" placeholder="نام کاربری/شماره همراه/ کد ملی">
+        <input type="password" class="w-11/12 h-[50px] border rounded-xl border-[#c2fff1] border-2 p-3 placeholder:text-[#00c293] focus:outline-[#c2fff1] focus:outline-double "  placeholder="رمز عبور">
+      </div>
+
+       <div class="flex w-11/12 mx-auto ">
+        <button class="w-1/2 h-12 rounded-xl  border text-center mx-1 bg-[#00c293] text-white text-[18px] hover:bg-[#008061]">ورود</button>
+        <button class="w-1/2 h-12 rounded-xl border text-center mx-2 border-[#ff033e] text-[#ff033e] hover:border-2 hover:font-bold ">فراموشی رمز عبور</button>
+      </div>
+      
+
+
+      </form>
+    
+
+     </div>
+       <div class=" w-full  h-44  max-md:hidden flex items-end justify-center" >
+        <div class=" w-10/12   text-center text-[12px] text-[#bbbbbb]">
+          &#169; تمام حقوق مادی معنوی آساف لایف محفوظ میباشد
+        </div>
+       </div>
+     </div>
+
+
+     
+     <div class="md:w-10/12 md:h-[95vh] m-3 max-md:h-96 max-md:w-full   ">
+      <img src="./img/login/001.jpg" alt="not find" class="h-full w-full object-cover rounded  md:hidden">
+      <img src="./img/login/001.jpg" alt="not find" class="h-full w-full rounded  object-cover max-md:hidden">
+     </div>   
+     
+
+
+    </div>
+
+    
 
 </body>
 </html>
