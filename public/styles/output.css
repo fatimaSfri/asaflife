@@ -3237,16 +3237,12 @@ video {
     height: 5rem;
   }
 
-  .max-md\:h-64 {
-    height: 16rem;
+  .max-md\:h-80 {
+    height: 20rem;
   }
 
   .max-md\:h-\[22rem\] {
     height: 22rem;
-  }
-
-  .max-md\:h-80 {
-    height: 20rem;
   }
 
   .max-md\:w-1\/2 {
