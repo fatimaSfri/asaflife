@@ -2221,6 +2221,15 @@ video {
   background-color: rgba(255,255,255,0.2);
 }
 
+.bg-\[\#d82d2d\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 45 45 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#\] {
+  background-color: #;
+}
+
 .bg-\[url\(\'\.\.\/img\/bg\/shrin\.jpg\'\)\] {
   background-image: url('../img/bg/shrin.jpg');
 }
@@ -3237,12 +3246,28 @@ video {
     height: 5rem;
   }
 
+  .max-md\:h-40 {
+    height: 10rem;
+  }
+
   .max-md\:h-80 {
     height: 20rem;
   }
 
   .max-md\:h-\[22rem\] {
     height: 22rem;
+  }
+
+  .max-md\:h-10 {
+    height: 2.5rem;
+  }
+
+  .max-md\:h-5 {
+    height: 1.25rem;
+  }
+
+  .max-md\:h-4 {
+    height: 1rem;
   }
 
   .max-md\:w-1\/2 {
