@@ -22,7 +22,7 @@ toggleBtn.addEventListener('click',() =>
 
 let imgSlider =document.querySelector('#parent')
 let dot =document.querySelectorAll(".dot")
-let a_img=['./img/bg/02.jpg', './img/bg/03.jpg','./img/bg/04.jpg','./img/bg/05.jpg','./img/bg/06.jpg']
+// let a_img=['./img/bg/02.jpg', './img/bg/03.jpg','./img/bg/04.jpg','./img/bg/05.jpg','./img/bg/06.jpg']
 let index = 0;
 
 setInterval(() => changeSlider(-1) ,10000);
