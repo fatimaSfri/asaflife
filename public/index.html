@@ -74,14 +74,14 @@
         <div v-bind:class="slider_images[index]"  class="bg-[length:100%_100%]  bg-no-repeat shadow-md h-[700px]  flex items-end justify-center mt-16 relative ml-0">
             <div class="flex justify-between w-full h-full absolute ">
                
-                <div class="w-14 h-full max-lg:w-7 bg-[rgba(255,255,255,0.2)] flex flex-col items-center justify-center z-10"  onclick="changeSlider(1)">
-                    <button class="text-white w-7 text-5xl z-50 " onclick="changeSlider(1)" id="next">&#60;</button>
+                <div class="w-14 h-full max-lg:w-7 bg-[rgba(255,255,255,0.2)] flex flex-col items-center justify-center z-10"   @click="onTimerInterval(+1)">
+                    <button class="text-white w-7 text-5xl z-50 " @click="onTimerInterval(+1)" id="next">&#60;</button>
                 </div>
                 <!-- <div class=" w-1/2 max-lg:w-full taxt-center flex items-center justify-center text-4xl text-white"><p>اطمینان در کیف پول شما</p></div>
                 <img src="./img/bg/02.png" alt="" class="max-lg:hidden  object-contain object-fit " >
                  -->
-                <div class="w-14 h-full max-lg:w-7  bg-[rgba(250,248,248,0.2)] flex flex-col items-center justify-center z-10" onclick="changeSlider(-1)">
-                    <button class="text-white w-7 h-14 text-5xl z-50" onclick="changeSlider(-1)" id="prev">&#62;</button>
+                <div class="w-14 h-full max-lg:w-7  bg-[rgba(250,248,248,0.2)] flex flex-col items-center justify-center z-10"  @click="onTimerInterval(-1)">
+                    <button class="text-white w-7 h-14 text-5xl z-50"  @click="onTimerInterval(-1)" id="prev">&#62;</button>
                 </div>
             </div>
             
@@ -384,6 +384,7 @@
             methods:{
                 onTimerInterval(){
                     this.index = (this.index + 1) % this.slider_images.length;
+                    index = (index + step + a_img.length) % a_img.length;
                 }
             },
             mounted(){
