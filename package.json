@@ -13,5 +13,8 @@
   "devDependencies": {
     "tailwindcss": "^3.4.7"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "vue": "^3.4.38"
+  }
 }

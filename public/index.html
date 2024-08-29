@@ -10,7 +10,7 @@
     
 </head>
 
-<body >
+<body id="app" >
     <!-- hight cheng -->
     <div class="w-full h-[2600hv] flex flex-col   font-asaf ">
         <!-- navbar -->
@@ -71,8 +71,7 @@
 
                 
         <!-- bg-img -->
-        <div class=" max-sm:bg-[url('../img/bg/S.jpg')]  max-lg:bg-[url('../img/bg/M.jpg')] lg:bg-[url('../img/bg/L.jpg')] bg-[length:100%_100%]  bg-no-repeat shadow-md h-[700px]  flex items-end justify-center mt-16 relative ml-0"
-         id="parent">
+        <div v-bind:class="slider_images[index]"  class="bg-[length:100%_100%]  bg-no-repeat shadow-md h-[700px]  flex items-end justify-center mt-16 relative ml-0">
             <div class="flex justify-between w-full h-full absolute ">
                
                 <div class="w-14 h-full max-lg:w-7 bg-[rgba(255,255,255,0.2)] flex flex-col items-center justify-center z-10"  onclick="changeSlider(1)">
@@ -364,8 +363,36 @@
     </div>
 
 
-    <script src="./js/app.js" type="module"></script>
+    <!-- <script src="./js/app.js" type="module"></script> -->
 
+    <script src="./js/vue.global.js"></script>
+
+    <script type="module">
+
+        Vue.createApp({
+            data(){
+                return {
+                    slider_images:
+                    [
+                    'max-sm:bg-back_small_01 max-md:bg-back_medium_01 md:bg-back_large_01',
+                    'max-sm:bg-back_small_02 max-md:bg-back_medium_02 md:bg-back_large_02',
+                    'max-sm:bg-back_small_03 max-md:bg-back_medium_03 md:bg-back_large_03',
+                    ],
+                    index:0
+                }
+            },
+            methods:{
+                onTimerInterval(){
+                    this.index = (this.index + 1) % this.slider_images.length;
+                }
+            },
+            mounted(){
+                setInterval(this.onTimerInterval, 5000);
+            }
+
+        }).mount("#app");
+
+    </script>
 </body>
 
 </html>
