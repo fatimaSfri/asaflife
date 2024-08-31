@@ -7,7 +7,7 @@ module.exports = {
         asaf: ["asaf", "Asaf"],
       },
       backgroundImage:{
-       "back_small_01":"url('../img/bg/S.jpg')",
+       "back_small_01":"url('../img/bg/S1.jpg')",
        "back_medium_01":"url('../img/bg/M.jpg')",
        "back_large_01":"url('../img/bg/L.jpg')",
        "back_small_02":"url('../img/bg/S2.jpg')",
