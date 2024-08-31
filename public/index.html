@@ -7,6 +7,7 @@
     <title>صفحه اصلی</title>
     <link rel="stylesheet" href="./styles/output.css">
     <link rel="shortcut icon" href="./img/02.svg" type="image/x-icon" >
+   
     
 </head>
 
@@ -21,17 +22,15 @@
                         <!-- logo -->
                    
 
-                     <!-- <div class=" dropdown-menu absolute  -top-full  left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 py-2
-                     text-lg font-bold  lg:flex-row lg:justify-center  z-50  "> -->
                         <ul class="flex flex-col items-center  lg:flex-row h-48  dropdown-menu absolute top-[-140px] max-lg:bg-[#0000009f]  
-                        text-lg font-bold  lg:justify-center w-full z-50 " dir="rtl">
+                        text-lg font-bold  lg:justify-center w-full z-50 " dir="rtl" :class="{ 'top-[4.1rem]': isOpen }">
 
 
-                            <a href="./index.html"><li class="hover:text-[#008061] text-[#00C293] pt-2 font-asaf py-2  cursor-pointer">خانه</li></a>
-                             <a href="./index.html"><li class="hover:text-[#008061] text-[#00C293]   py-2 cursor-pointer"> پشتیبانی</li></a>
-                             <a href="./index.html"> <li class="hover:text-[#008061] px-3 text-[#00C293] py-2 cursor-pointer "> سرویس</li></a>
-                             <a href="./index.html"><li class="hover:text-[#008061] px-3 text-[#00C293] py-2 cursor-pointer">سامانه</li> </a>  
-                        </ul>
+                 <a href="./index.html"><li class="hover:text-[#008061] text-[#00C293] pt-2 font-asaf py-2  cursor-pointer">خانه</li></a>
+                  <a href="./index.html"><li class="hover:text-[#008061] text-[#00C293]   py-2 cursor-pointer"> پشتیبانی</li></a>
+                  <a href="./index.html"> <li class="hover:text-[#008061] px-3 text-[#00C293] py-2 cursor-pointer "> سرویس</li></a>
+                  <a href="./index.html"><li class="hover:text-[#008061] px-3 text-[#00C293] py-2 cursor-pointer">سامانه</li> </a>  
+                </ul>
 
 
                        
@@ -41,8 +40,9 @@
 
                     <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0  z-50 fixed w-full z-50"  >
                     <nav class="flex items-center  justify-between px-7 h-16 ">
-                     <div class="dropdown-menu left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 
-                     text-lg font-bold  max-lg:invisible lg:flex-row lg:justify-center  z-50 ">
+                     <div class="dropdown-menu  left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 
+                                 text-lg font-bold  max-lg:invisible lg:flex-row lg:justify-center  z-50  " >
+
                         <ul class=" lg:flex-row lg:gap-8 dropdown-menu  max-lg:bg-[#0000009f] w-full flex flex-col items-center
                         text-lg font-bold  max-lg:invisible  lg:justify-center  z-50  " dir="rtl">
 
@@ -59,7 +59,7 @@
                       
                      </div>
 
-                     <div class="toggle-button lg:hidden absolute " >
+                     <div class="toggle-button lg:hidden absolute "  @click="toggleDropdown" >
                        <img src="./img/bars-solid.svg" class="w-10 h-10 font-[#4f4f4f] z-50">
                        
                      </div>
@@ -75,7 +75,7 @@
             <div class="flex justify-between w-full h-full absolute ">
                
                 <div class="w-14 h-full max-lg:w-7 bg-[rgba(255,255,255,0.2)] flex flex-col items-center justify-center z-10"   @click="onTimerInterval(+1)">
-                    <button class="text-white w-7 text-5xl z-50 " @click="onTimerInterval(+1)" id="next">&#60;</button>
+                    <button class="text-white w-7 text-5xl z-50"  @click="onTimerInterval(+1)" id="next">&#60;</button>
                 </div>
                 <!-- <div class=" w-1/2 max-lg:w-full taxt-center flex items-center justify-center text-4xl text-white"><p>اطمینان در کیف پول شما</p></div>
                 <img src="./img/bg/02.png" alt="" class="max-lg:hidden  object-contain object-fit " >
@@ -86,34 +86,10 @@
             </div>
             
             
-        <!-- </div> -->
-            <!-- C T A -->
-            <!-- <div class="">
+       
 
-            </div> -->
-            <!-- <div class="flex flex-col w-full items-center h-64  justify-between border  "> -->
-                <!-- <div
-                    class=" w-3/12 max-md:w-5/12 h-16  p-2 rounded-xl flex flex-col  justify-around ml-[45%] max-sm:mt-44 border ">
-                    -->
-                    <!-- <div class="absolute w-9/12 h-3/6  flex flex-col items-start justify-center ">
-                    <div class=" h-1/4 w-96 flex items-center justify-center xl:mr-10 ">
-                    <a href="./login.html" class="z-50 w-full" >
-                        <button class="  w-11/12 max-lg:w-5/12  h-10 md:mr-3 bg-gradient-to-r max-md:text-[14px] from-[#008061] to-[#00C293]   rounded-md text-white max-sm:text-[12px] ">ورود به سامانه</button>
-                    </a></div></div> -->
-                <!-- </div> -->
-                <!-- doted -->
-
-<!-- 
-                <div class=" flex  items-center justify-center">
-                    <div class="w-[9rem] h-16  flex justify-between items-end">
-                        <span class="dot inline-block md:w-3 md:h-3  max-md:w-2 max-md:h-2 mb-2 rounded-full bg-[#C2FFF1] z-50" onclick="changeSlider(1,0);otherClear(0)" ></span>
-                        <span class="dot inline-block md:w-3 md:h-3  max-md:w-2 max-md:h-2 mb-2 rounded-full bg-[#C2FFF1] z-50 " onclick="changeSlider(2,0);otherClear(1)"></span>
-                        <span class="dot inline-block md:w-3 md:h-3  max-md:w-2 max-md:h-2 mb-2 rounded-full bg-[#C2FFF1] z-50 " onclick="changeSlider(3,0);otherClear(2)"></span>
-                        <span class="dot inline-block md:w-3 md:h-3  max-md:w-2 max-md:h-2 mb-2  rounded-full bg-[#C2FFF1] z-50" onclick="changeSlider(5,0);otherClear(3)"></span>
-                    </div>
-                    </div>
-                </div> -->
         </div>
+
         <!-- cart , cheng-hight  -->
         <div class=" w-full flex flex-col justify-around ">
             <div class=" mx-auto  w-3/12 text-center h-10 my-6 rounded-xl p-1 max-sm:pt-3 max-sm:text-[10px] bg-[#008061] text-white font-bold  "> سرویس ها </div>
@@ -363,8 +339,24 @@
     </div>
 
 
-    <!-- <script src="./js/app.js" type="module"></script> -->
+    <script>
+     
+     const toggleBtn =document.querySelector('.toggle-button')
+     const dropdown=document.querySelector(".dropdown-menu")
+     console.log(toggleBtn)
+     console.log(dropdown)
+     toggleBtn.addEventListener('click',() =>
+       {
 
+       dropdown.classList.toggle('top-[4.1rem]')
+  
+       })
+      
+
+    </script>
+
+    
+    
     <script src="./js/vue.global.js"></script>
 
     <script type="module">
@@ -374,26 +366,37 @@
                 return {
                     slider_images:
                     [
-                    'max-sm:bg-back_small_01 max-md:bg-back_medium_01 md:bg-back_large_01',
-                    'max-sm:bg-back_small_02 max-md:bg-back_medium_02 md:bg-back_large_02',
-                    'max-sm:bg-back_small_03 max-md:bg-back_medium_03 md:bg-back_large_03',
+                    'max-sm:bg-back_small_01 max-lg:bg-back_medium_01 lg:bg-back_large_01',
+                    'max-sm:bg-back_small_02 max-lg:bg-back_medium_02 lg:bg-back_large_02',
+                    'max-sm:bg-back_small_03 max-lg:bg-back_medium_03 lg:bg-back_large_03',
                     ],
-                    index:0
+                    index:0,
+                    isOpen: false,
                 }
             },
             methods:{
                 onTimerInterval(){
                     this.index = (this.index + 1) % this.slider_images.length;
                     index = (index + step + a_img.length) % a_img.length;
-                }
+                },
+                dropdownToggele(){
+                    this.dropdown.classList.toggle('top-[4.1rem]')
+                    console.log('hiii')
+                },
+               
+            toggleDropdown() {
+            this.isOpen = !this.isOpen;
+          },
             },
             mounted(){
                 setInterval(this.onTimerInterval, 5000);
+                
             }
 
         }).mount("#app");
 
     </script>
+  
 </body>
 
 </html>

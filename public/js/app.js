@@ -1,52 +1,46 @@
 const toggleBtn =document.querySelector('.toggle-button')
  const dropdown=document.querySelector(".dropdown-menu")
- let s=0
+//  let s=0
 
- window.addEventListener('scroll', function(){
 
-s = dropdown.scrollTop
-console.log(s)
-})
 
 toggleBtn.addEventListener('click',() =>
 {
  dropdown.classList.toggle('top-[4.1rem]')
 })
 
-let imgSlider =document.querySelector('#parent')
-let dot =document.querySelectorAll(".dot")
+// let imgSlider =document.querySelector('#parent')
+// let dot =document.querySelectorAll(".dot")
 
-let a_img=['bg-small','bg-medium','bg-large'];
+// let a_img=['bg-small','bg-medium','bg-large'];
 
-let index = 0;
+// let index = 0;
 
-setInterval(() => changeSlider(-1) ,10000);
+// setInterval(() => changeSlider(-1) ,10000);
 
- const changeSlider = (step,inx=null) => 
- {
+//  const changeSlider = (step,inx=null) => 
+//  {
 
-    if(inx != null){
-      index=inx
-     }
+//     if(inx != null){
+//       index=inx
+//      }
 
-    index = (index + step + a_img.length) % a_img.length;
-    imgSlider.style.backgroundImage = `url(${a_img[index]})`; 
+//     index = (index + step + a_img.length) % a_img.length;
+//     imgSlider.style.backgroundImage = `url(${a_img[index]})`; 
      
-     
-  
- }
+//  }
 
-window.changeSlider = changeSlider;
+// window.changeSlider = changeSlider;
 
-const dots = document.getElementsByClassName('dot');
+// const dots = document.getElementsByClassName('dot');
 
-window.otherClear = (index) => {
+// window.otherClear = (index) => {
 
-    for (let i = 0; i < dots.length; i++) 
-    {
-        dots[i].style.background = "#C2FFF1";
-    }
-    dots[index].style.background = "#00c293";
-}
+//     for (let i = 0; i < dots.length; i++) 
+//     {
+//         dots[i].style.background = "#C2FFF1";
+//     }
+//     dots[index].style.background = "#00c293";
+// }
 
 
