@@ -17,7 +17,7 @@
         <!-- navbar -->
          
     
-                    <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0 w-full fixed z-50  " dir="ltr"  >
+                    <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0 w-full fixed z-50  "   >
                     <nav class="flex items-center justify-between  h-16  ">
                         <!-- logo -->
                    
@@ -38,8 +38,14 @@
                      
                     </nav> </header>
 
-                    <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0  fixed w-full z-50"  >
+                    <header class="bg-[#f8f8f8] rounded-b-sm mt-0 pt-0  fixed w-full z-50" >
                     <nav class="flex items-center  justify-between px-7 h-16 ">
+
+                     <div class="flex justify-start">
+                           <img src="./img/ASAF Life Insurance.svg" class="w-32 max-md:w-52 h-15 "></div>
+                    
+                     
+
                      <div class="dropdown-menu  left-0 max-lg:bg-[#0000009f] w-full flex flex-col items-center gap-7 
                                  text-lg font-bold  max-lg:invisible lg:flex-row lg:justify-center  z-50  " >
 
@@ -59,18 +65,23 @@
                       
                      </div>
 
-                     <div class="toggle-button lg:hidden absolute" @click="toggleDropdown" >
-                       <img src="./img/bars-solid.svg" class="w-10 h-10 font-[#4f4f4f] z-50">
-                       
+                     <div class="max-md:w-72  h-14 md:w-52  pt-2 max-lg:ml-5 ">
+                       <a href="./login.html"><button class="w-1/2 h-10 border rounded-xl text-white bg-[#00C293] hover:bg-[#008061] ">ورود </button></a>
+                        <a href="./register.html"><button class="w-1/2 h-10 border rounded-xl text-[#00C293] boreder-[#00C293] hover:border-[#008061] hover:text-[#008061] ">ثبت نام </button></a>
                      </div>
-                     <div class="flex justify-start"><img src="./img/ASAF Life Insurance.svg" class="w-32 h-15 "></div>
-
+                   
+                     
+                        <img src="./img/bars-solid.svg" class="w-10 h-10 font-[#4f4f4f] z-50 lg:hidden" @click="toggleDropdown">
+                        
+                  
                     </nav>
                     </header>
 
 
                 
         <!-- bg-img -->
+       
+         
         <div v-bind:class="slider_images[index]"  class="bg-[length:100%_100%]  bg-no-repeat shadow-md h-[700px]  flex items-end justify-center mt-16 relative ml-0">
             <div class="flex justify-between w-full h-full absolute ">
                
