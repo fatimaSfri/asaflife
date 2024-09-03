@@ -1803,6 +1803,10 @@ video {
     height: 665px;
   }
 
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:w-10\/12 {
     width: 83.333333%;
   }
