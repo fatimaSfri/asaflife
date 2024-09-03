@@ -6,42 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صفحه اصلی</title>
     <link rel="stylesheet" href="./styles/output.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./img/02.svg" type="image/x-icon" >
-   <style>
-     .button {
-            position: relative;
-            border: none;
-            border-radius: 20px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            overflow: hidden;
-            outline: none;
-            box-shadow: 0px 0px 10px rgb(6, 70, 6);
-        }
-
-        .button::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: -100%;
-            width: 100%;
-            height: 200%;
-            background: rgba(255, 255, 255, 0.5);
-            transition: left 0.8s ease;
-            z-index: 0;
-            transform: translateY(-50%);
-        }
-
-        .button:hover::before {
-            left: 100%;
-        }
-
-        .button span {
-            position: relative;
-            z-index: 1;
-        }
-   </style>
+   
     
 </head>
 
@@ -58,8 +25,8 @@
                         <!-- logo -->
                    
 
-                        <ul class="flex flex-col items-center  lg:flex-row h-48  dropdown-menu absolute top-[-140px] max-lg:bg-[#0000009f]  
-                        text-lg font-bold  lg:justify-center w-full z-50 " dir="rtl" :class="{ 'top-[4.1rem]': isOpen }">
+                <ul class="flex flex-col items-center  lg:flex-row h-48  dropdown-menu absolute top-[-140px] max-lg:bg-[#0000009f]  
+                 text-lg font-bold  lg:justify-center w-full z-50 " dir="rtl" :class="{ 'top-[4.1rem]': isOpen }">
 
 
                  <a href="./index.html" class="w-full text-center hover:bg-[#c2fff1]"><li class="hover:text-[#008061] text-[#00C293] pt-2 font-asaf py-2  cursor-pointer">خانه</li></a>
@@ -97,14 +64,14 @@
                             
                         </ul>
 
-                        
-                      
                      </div>
 
+                     
                      <div class="w-52 h-16 pt-2 max-md:w-60 ">
-                       <button class="button w-full h-10  text-white bg-gradient-to-r max-md:text-[14px] from-[#008061] to-[#a1f1df] flex"
-                       ><div class="max-md:text-[12px] w-1/2 h-full pt-2 "><a href="./register.html" > ثبت نام</a></div><div  class="max-md:text-[12px] w-2/3 pt-2 h-full rounded-3xl bg-[#008061]" >
-                       <a href="./login.html" >ورود </a></div></button>
+                       <button class="button w-full h-10  text-white bg-gradient-to-r max-md:text-[14px] from-[#008061] to-[#a1f1df] flex">
+                       <div class="max-md:text-[12px] w-1/2 h-full pt-2 register"><a href="./register.html" > ثبت نام</a></div>
+                       <div  class="max-md:text-[12px] w-[58%] pt-2 h-full rounded-3xl bg-[#008061] login absolute left-0" >
+                       <a href="./login.html"  >ورود </a></div></button>
                       
                          
                      </div>
@@ -124,9 +91,11 @@
                 <div class="w-14 h-full max-lg:w-7 bg-[rgba(255,255,255,0.2)] flex flex-col items-center justify-center z-10"   @click="onTimerInterval(+1)">
                     <button class="text-white w-7 text-5xl z-50"  @click="onTimerInterval(+1)" id="next">&#60;</button>
                 </div>
+
                 <!-- <div class=" w-1/2 max-lg:w-full taxt-center flex items-center justify-center text-4xl text-white"><p>اطمینان در کیف پول شما</p></div>
                 <img src="./img/bg/02.png" alt="" class="max-lg:hidden  object-contain object-fit " >
                  -->
+
                 <div class="w-14 h-full max-lg:w-7  bg-[rgba(250,248,248,0.2)] flex flex-col items-center justify-center z-10"  @click="onTimerInterval(-1)">
                     <button class="text-white w-7 h-14 text-5xl z-50"  @click="onTimerInterval(-1)" id="prev">&#62;</button>
                 </div>
