@@ -1,46 +1,37 @@
-const toggleBtn =document.querySelector('.toggle-button')
- const dropdown=document.querySelector(".dropdown-menu")
-//  let s=0
+Vue.createApp({
+    data(){
 
+        return {
+            slider_images:
+            [
+            'max-sm:bg-back_small_01 max-lg:bg-back_medium_01 lg:bg-back_large_01',
+            'max-sm:bg-back_small_02 max-lg:bg-back_medium_02 lg:bg-back_large_02',
+            'max-sm:bg-back_small_03 max-lg:bg-back_medium_03 lg:bg-back_large_03',
+            ],
+            index:0,
+            isOpen: false,
+        }
+    },
 
+    methods:{
+        onTimerInterval(step = 1){
+            this.index = (this.index + step + this.slider_images.length) % this.slider_images.length;
+        },
+        dropdownToggele(){
+            this.dropdown.classList.toggle('top-[4.1rem]')
+            
+        },
+       
+    toggleDropdown() {
+    this.isOpen = !this.isOpen;
+  },
+    },
 
-toggleBtn.addEventListener('click',() =>
-{
- dropdown.classList.toggle('top-[4.1rem]')
-})
+    mounted(){
+        setInterval(this.onTimerInterval, 5000);
+        
+    }
 
-// let imgSlider =document.querySelector('#parent')
-// let dot =document.querySelectorAll(".dot")
-
-// let a_img=['bg-small','bg-medium','bg-large'];
-
-// let index = 0;
-
-// setInterval(() => changeSlider(-1) ,10000);
-
-//  const changeSlider = (step,inx=null) => 
-//  {
-
-//     if(inx != null){
-//       index=inx
-//      }
-
-//     index = (index + step + a_img.length) % a_img.length;
-//     imgSlider.style.backgroundImage = `url(${a_img[index]})`; 
-     
-//  }
-
-// window.changeSlider = changeSlider;
-
-// const dots = document.getElementsByClassName('dot');
-
-// window.otherClear = (index) => {
-
-//     for (let i = 0; i < dots.length; i++) 
-//     {
-//         dots[i].style.background = "#C2FFF1";
-//     }
-//     dots[index].style.background = "#00c293";
-// }
+}).mount("#app");
 
 
